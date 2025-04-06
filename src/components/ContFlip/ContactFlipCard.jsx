@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Card.css'; // Make sure this file is created
-
+ // Make sure this file is created
+import './card.css';
 const ContactFlipCard = () => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [flipDisabled, setFlipDisabled] = useState(false);
