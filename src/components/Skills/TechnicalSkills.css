@@ -1,0 +1,103 @@
+
+
+#skills {
+  padding: 40px;
+  color: #fff;
+  background-color: black;
+}
+
+.text-primary {
+  color: #00d1ff !important;
+}
+
+.skill-setcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.skill-set__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.skill-set__item {
+  
+  
+  background-color: #2c2c2c;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill-set__item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-set__icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.skill-set__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.small-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #00c8ff;
+}
+
+.skill-set__bar {
+  background-color: #444;
+  height: 8px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-set__progress {
+  height: 100%;
+  background: linear-gradient(to right, #00d1ff, #007aff);
+  border-radius: 5px;
+  width: 0;
+  animation: growBar 2s ease forwards;
+  --bar-width: 0%;
+}
+
+.skill-set__progress {
+  width: var(--bar-width);
+}
+
+@keyframes growBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--bar-width);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skill-set__item {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+
